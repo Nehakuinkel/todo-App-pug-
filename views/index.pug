@@ -27,14 +27,11 @@ html
            
             each result,i in data 
               tr 
-                td
-                h1(i+1)
-                
-                td
-                h1${result.description}
+                td #{i+1}
+                td #{result.description} 
                 td 
-                  a(href=`/edit/${result._id}` class="link-secondary") Edit
-                  a(href=`/delete/${result._id}` class="link-danger") Delete
+                  a(href='/edit/'+result._id class="link-secondary") Edit
+                  a(href='/delete/'+result._id class="link-danger") Delete
 
 
 

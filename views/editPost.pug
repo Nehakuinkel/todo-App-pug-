@@ -10,22 +10,11 @@ html
 
         form(action="/updatePost" method="post")
           div(class="input-group mb-3")
-             input(type="text" hidden name="id" value="#{id}") 
-             input(type="text" class="form-control" placeholder="Add to list" value= #{data.description} name="text" aria-label="list" aria-describedby="button-addon2") 
+             input(type="text" hidden name="id" value=""+data._id) 
+             input(type="text" class="form-control" placeholder="Add to list" name="editText" aria-label="list" aria-describedby="button-addon2") 
              button(class="btn btn-outline-primary" type="submit") Update  
 
-//-     <h1>Enter text to update the list</h1>
-//-     <div class="container">
-//-         <form action="/updatePost" method="POST">
-//-           <div class="input-group mb-3">
-//-             <input type="text" hidden name="id" value ="<%=id%>">
-//-             <input type="text" class="form-control" placeholder="Add to list" value = "<%=data.description%>" name="editText" aria-label="list" aria-describedby="button-addon2">
-//-             <button class="btn btn-outline-primary" type="submit" >Update</button>
-//-           </div>
-//-         </form>
-//-       </div>
-//- </body>
-//- </html>
+
 
 
 
